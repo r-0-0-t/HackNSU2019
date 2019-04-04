@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">NSU_Project</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_orders">My Orders</string>
+    <string name="nav_courses">My Courses</string>
+    <string name="nav_requests">Requests</string>
 </resources>
