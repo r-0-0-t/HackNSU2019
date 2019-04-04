@@ -32,7 +32,7 @@ public class MapFragment extends Fragment {
         im.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(),Profile.class));
+                startActivity(new Intent(getActivity(),BookUserProfile.class));
             }
         });
         return v;

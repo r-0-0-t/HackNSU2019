@@ -114,6 +114,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 intent = new Intent(this,MyBooks.class);
                 drawerLayout.closeDrawer(GravityCompat.START);
                 break;
+            case R.id.nav_balance:
+                intent = new Intent(this,Balance.class);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                break;
 
             case R.id.reg_courses:
                 intent = new Intent(this,RegisteredCourses.class);
