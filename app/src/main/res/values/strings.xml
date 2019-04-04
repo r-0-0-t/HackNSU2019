@@ -5,4 +5,6 @@
     <string name="nav_orders">My Orders</string>
     <string name="nav_courses">My Courses</string>
     <string name="nav_requests">Requests</string>
+    <string name="nav_open">Open Navigation Bar</string>
+    <string name="nav_close">Close Navigation Bar</string>
 </resources>

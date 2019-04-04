@@ -12,6 +12,31 @@
             android:title="@string/nav_courses" />
         <item android:id="@+id/requests"
             android:title="@string/nav_requests"/>
+        <item
+            android:id="@+id/localWorshops"
+            android:title="Local Workshops Around"
+            />
+        <item
+            android:id="@+id/nav_balance"
+            android:title="Balance"
+            />
+        <item
+            android:id="@+id/borrowed_books"
+            android:title="Borrowed Books"
+            />
+        <item
+            android:id="@+id/lent_books"
+            android:title="Lent Books"
+            />
+        <item
+            android:id="@+id/myBooks"
+            android:title="My Books"
+            />
+        <item
+            android:id="@+id/reg_courses"
+            android:title="Registered Courses"
+            />
+
 
     </group>
 </menu>
