@@ -12,6 +12,14 @@
         <activity android:name=".BookProfile"></activity>
         <activity android:name=".MyOrders" />
         <activity android:name=".Profile" />
+        <activity android:name=".Requests" />
+        <activity android:name=".RegisteredCourses" />
+        <activity android:name=".LocalWorkshops" />
+        <activity android:name=".MyBooks"/>
+        <activity android:name=".MyCourses"/>
+        <activity android:name=".BookUserProfile" />
+        <activity android:name=".BorrowedBooks" />
+        <activity android:name=".LentBooks" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
