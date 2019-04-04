@@ -33,7 +33,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="book request to"
+                    android:text="borrowed from"
                     android:textSize="25dp"
                     />
 
@@ -60,7 +60,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="for"
+                    android:text="book"
                     android:textSize="25dp"
                     />
 
@@ -102,7 +102,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="pending"
+                    android:text="borrowed"
                     android:textSize="25dp"
                     android:id="@+id/statusid"
                     />
@@ -130,7 +130,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cancel"
+                    android:text="Return"
                     android:id="@+id/cancelBtn"
                     android:visibility="visible"
                     android:textColor="@android:color/holo_red_dark"
@@ -162,7 +162,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="book request to"
+                    android:text="borrowed from"
                     android:textSize="25dp"
                     />
 
@@ -190,7 +190,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="for"
+                    android:text="book"
                     android:textSize="25dp"
                     />
 
@@ -236,7 +236,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="pending"
+                    android:text="borrowed"
                     android:textSize="25dp"
 
                     />
@@ -264,7 +264,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cancel"
+                    android:text="return"
 
                     android:visibility="visible"
                     android:textColor="@android:color/holo_red_dark"
@@ -294,7 +294,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="book request to"
+                android:text="borrowed from"
                 android:textSize="25dp"
                 />
 
@@ -322,7 +322,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="for"
+                android:text="book"
                 android:textSize="25dp"
                 />
 
@@ -368,7 +368,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="pending"
+                android:text="borrowed"
                 android:textSize="25dp"
 
                 />
@@ -396,7 +396,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cancel"
+                android:text="return"
 
                 android:visibility="visible"
                 android:textColor="@android:color/holo_red_dark"

@@ -18,7 +18,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="30dp"
+            android:padding="20dp"
             android:orientation="vertical"
             android:background="@drawable/bg_round"
             >
@@ -33,7 +33,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="book request to"
+                    android:text="book request from"
                     android:textSize="25dp"
                     />
 
@@ -121,9 +121,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Confirm"
-                    android:id="@+id/confirmBtn"
                     android:layout_marginRight="130dp"
-                    android:visibility="gone"
                     android:background="@android:color/transparent"
                     />
 
@@ -146,7 +144,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginTop="100dp"
-            android:padding="30dp"
+            android:padding="20dp"
             android:background="@drawable/bg_round"
             >
 
@@ -162,7 +160,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="book request to"
+                    android:text="book request from"
                     android:textSize="25dp"
                     />
 
@@ -257,7 +255,6 @@
                     android:text="Confirm"
 
                     android:layout_marginRight="130dp"
-                    android:visibility="gone"
                     android:background="@android:color/transparent"
                     />
 
@@ -278,7 +275,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="100dp"
-        android:padding="30dp"
+        android:padding="20dp"
         android:background="@drawable/bg_round"
         >
 
@@ -294,7 +291,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="book request to"
+                android:text="book request from"
                 android:textSize="25dp"
                 />
 
@@ -389,7 +386,6 @@
                 android:text="Confirm"
 
                 android:layout_marginRight="130dp"
-                android:visibility="gone"
                 android:background="@android:color/transparent"
                 />
 

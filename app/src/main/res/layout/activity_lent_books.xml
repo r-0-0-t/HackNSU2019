@@ -33,7 +33,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="book request to"
+                    android:text="lent to"
                     android:textSize="25dp"
                     />
 
@@ -60,7 +60,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="for"
+                    android:text="book"
                     android:textSize="25dp"
                     />
 
@@ -102,7 +102,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="pending"
+                    android:text="lent"
                     android:textSize="25dp"
                     android:id="@+id/statusid"
                     />
@@ -132,7 +132,7 @@
                     android:layout_height="wrap_content"
                     android:text="Cancel"
                     android:id="@+id/cancelBtn"
-                    android:visibility="visible"
+                    android:visibility="invisible"
                     android:textColor="@android:color/holo_red_dark"
                     android:background="@android:color/transparent"
                     />
@@ -162,7 +162,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="book request to"
+                    android:text="lent to"
                     android:textSize="25dp"
                     />
 
@@ -190,7 +190,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="for"
+                    android:text="book"
                     android:textSize="25dp"
                     />
 
@@ -236,7 +236,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="pending"
+                    android:text="returned"
                     android:textSize="25dp"
 
                     />
@@ -254,10 +254,10 @@
                     android:textColor="@android:color/holo_green_dark"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Confirm"
+                    android:text="Confirm returned"
 
                     android:layout_marginRight="130dp"
-                    android:visibility="gone"
+                    android:visibility="visible"
                     android:background="@android:color/transparent"
                     />
 
@@ -266,7 +266,7 @@
                     android:layout_height="wrap_content"
                     android:text="Cancel"
 
-                    android:visibility="visible"
+                    android:visibility="invisible"
                     android:textColor="@android:color/holo_red_dark"
                     android:background="@android:color/transparent"
                     />
@@ -294,7 +294,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="book request to"
+                android:text="lent to"
                 android:textSize="25dp"
                 />
 
@@ -322,7 +322,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="for"
+                android:text="book"
                 android:textSize="25dp"
                 />
 
@@ -368,7 +368,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="pending"
+                android:text="lent"
                 android:textSize="25dp"
 
                 />
@@ -398,7 +398,7 @@
                 android:layout_height="wrap_content"
                 android:text="Cancel"
 
-                android:visibility="visible"
+                android:visibility="invisible"
                 android:textColor="@android:color/holo_red_dark"
                 android:background="@android:color/transparent"
                 />
