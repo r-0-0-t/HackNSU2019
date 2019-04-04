@@ -79,6 +79,46 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 intent = new Intent(this, Profile.class);
                 drawerLayout.closeDrawer(GravityCompat.START);
                 break;
+
+            case R.id.orders:
+                intent = new Intent(this,MyOrders.class);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                break;
+
+            case R.id.requests:
+                intent = new Intent(this,Requests.class);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                break;
+
+            case R.id.courses:
+                intent = new Intent(this,MyCourses.class);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                break;
+
+            case R.id.localWorshops:
+                intent = new Intent(this,LocalWorkshops.class);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                break;
+
+            case R.id.borrowed_books:
+                intent = new Intent(this,BorrowedBooks.class);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                break;
+
+            case R.id.lent_books:
+                intent = new Intent(this,LentBooks.class);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                break;
+
+            case R.id.myBooks:
+                intent = new Intent(this,MyBooks.class);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                break;
+
+            case R.id.reg_courses:
+                intent = new Intent(this,RegisteredCourses.class);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                break;
         }
         this.startActivity(intent);
         return false;
