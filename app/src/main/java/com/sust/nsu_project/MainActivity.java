@@ -11,6 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private Toolbar toolbar;
     private NavigationView navigationView;
     private ActionBarDrawerToggle drawerToggle;
+    private SearchView searchView;
     TextView drawerUserName;
 
     @Override
@@ -31,6 +34,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toolbar = findViewById(R.id.toolbar);
         navigationView = findViewById(R.id.nav_view);
         setSupportActionBar(toolbar);
+        searchView = findViewById(R.id.activity_main_redtv);
+        searchView.setOnSearchClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,Profile.class));
+            }
+        });
 
         getSupportActionBar().setTitle("NSU App");
 
@@ -72,5 +82,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         this.startActivity(intent);
         return false;
+    }
+
+    public void doClickBook(View view) {
+        startActivity(new Intent(MainActivity.this,BookProfile.class));
     }
 }
