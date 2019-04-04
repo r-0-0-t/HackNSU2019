@@ -94,6 +94,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Intent intent = null;
 
         switch(id) {
+            case R.id.home:
+                intent = new Intent(this,MainActivity.class);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                break;
 
             case R.id.profile:
                 intent = new Intent(this, Profile.class);
@@ -143,6 +147,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 intent = new Intent(this,RegisteredCourses.class);
                 drawerLayout.closeDrawer(GravityCompat.START);
                 break;
+
         }
         this.startActivity(intent);
         return false;
