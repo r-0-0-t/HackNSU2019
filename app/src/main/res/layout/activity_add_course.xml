@@ -5,18 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Course"
     android:orientation="vertical"
-    >
+    tools:context=".AddCourse">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        android:layout_marginBottom="10dp"
-        />
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
     <ImageView
         android:src="@drawable/discreatecourse"
@@ -28,10 +25,10 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#000"/>
-    <TextView
+    <EditText
         android:textColor="#000"
         android:textStyle="bold"
-        android:text="Instructor: MD Zafar Iqbal"
+        android:hint="name"
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -39,10 +36,10 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#000"/>
-    <TextView
+    <EditText
         android:textColor="#000"
         android:textStyle="bold"
-        android:text="Total Credits: 3.0"
+        android:hint="Total Credits"
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -50,10 +47,10 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#000"/>
-    <TextView
+    <EditText
         android:textColor="#000"
         android:textStyle="bold"
-        android:text="Lab Credits: 1.5"
+        android:hint="Lab Credits"
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -61,10 +58,10 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#000"/>
-    <TextView
+    <EditText
         android:textColor="#000"
         android:textStyle="bold"
-        android:text="Has Tests: YES"
+        android:hint="Has tests? yes or no?"
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -72,15 +69,15 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#000"/>
-    <TextView
+    <EditText
         android:textColor="#000"
         android:textStyle="bold"
-        android:text="Price: 30 TK"
+        android:hint="Enter price"
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
-        android:text="Register for course"
+        android:text="Add course"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -88,15 +85,5 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#000"/>
-    <TextView
-        android:id="@+id/reg"
-        android:onClick="onRegClick"
-        android:visibility="gone"
-        android:textColor="#000"
-        android:textStyle="bold"
-        android:text="Registered"
-        android:padding="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
 </LinearLayout>

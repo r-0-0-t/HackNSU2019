@@ -36,6 +36,10 @@
             android:id="@+id/reg_courses"
             android:title="Registered Courses"
             />
+        <item
+            android:id="@+id/add_course"
+            android:title="Add a course"
+            />
 
 
     </group>
