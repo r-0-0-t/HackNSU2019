@@ -70,6 +70,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         String st = searchView.getText().toString();
         if(st.equals("discrete")) {
             startActivity(new Intent(this,BookProfile.class));
+        } else {
+            startActivity(new Intent(this,Course.class));
         }
     }
 
