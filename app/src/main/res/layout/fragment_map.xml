@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     tools:context=".MapFragment">
     <ImageView
+        android:id="@+id/im"
         android:scaleType="fitCenter"
         android:src="@drawable/mapimage"
         android:layout_width="match_parent"
