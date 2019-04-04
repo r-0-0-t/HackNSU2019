@@ -10,8 +10,11 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
+import android.widget.EditText;
 import android.widget.SearchView;
 import android.widget.TextView;
 
@@ -22,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private Toolbar toolbar;
     private NavigationView navigationView;
     private ActionBarDrawerToggle drawerToggle;
-    private SearchView searchView;
+    private EditText searchView;
     TextView drawerUserName;
 
     @Override
@@ -35,12 +38,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView = findViewById(R.id.nav_view);
         setSupportActionBar(toolbar);
         searchView = findViewById(R.id.activity_main_redtv);
-        searchView.setOnSearchClickListener(new View.OnClickListener() {
+        searchView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,Profile.class));
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_SEARCH
+                        || actionId == EditorInfo.IME_ACTION_DONE
+                        || event.getAction() == KeyEvent.ACTION_DOWN
+                        || event.getAction() == KeyEvent.KEYCODE_ENTER) {
+                    search();
+
+                }
+                return false;
             }
         });
+
 
         getSupportActionBar().setTitle("NSU App");
 
@@ -53,6 +64,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawerToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         navigationView.setNavigationItemSelectedListener(this);
+    }
+
+    private void search() {
+        String st = searchView.getText().toString();
+        if(st.equals("discrete")) {
+            startActivity(new Intent(this,BookProfile.class));
+        }
     }
 
     @Override
