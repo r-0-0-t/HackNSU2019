@@ -17,11 +17,27 @@
             android:layout_height="?attr/actionBarSize"
             android:background="@color/colorPrimary"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
-
-        <FrameLayout
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/MainFragment"/>
+            android:layout_height="match_parent">
+
+            <EditText
+
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:hint="Search for Courses!"
+                android:elevation="10dp"
+                android:id="@+id/activity_main_redtv"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                />
+
+            <com.nhaarman.supertooltips.ToolTipRelativeLayout
+                android:id="@+id/activity_main_tooltipRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
     </LinearLayout>
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
