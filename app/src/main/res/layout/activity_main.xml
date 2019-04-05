@@ -61,7 +61,6 @@
                 android:layout_height="wrap_content">
                     <ImageView
                         android:id="@+id/one"
-                        android:onClick="doClickBook"
                         android:src="@drawable/discretebook"
                         android:layout_width="200dp"
                         android:layout_height= "200dp"/>
@@ -72,6 +71,7 @@
                         android:layout_height= "200dp"/>
                     <ImageView
                         android:src="@drawable/discretebook"
+                        android:id="@+id/three"
                         android:layout_width="200dp"
                         android:layout_height= "200dp"/>
             </LinearLayout></HorizontalScrollView>
@@ -100,6 +100,7 @@
                     android:onClick="onCourseClick"
                     android:src="@drawable/discreatecourse"
                     android:layout_width="match_parent"
+                    android:id="@+id/courseid"
                     android:layout_height="300dp" />
             </LinearLayout>
         </ScrollView>

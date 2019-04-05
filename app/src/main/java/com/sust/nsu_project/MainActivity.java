@@ -15,10 +15,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.SearchView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
 
     private DrawerLayout drawerLayout;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ActionBarDrawerToggle drawerToggle;
     private EditText searchView;
     TextView drawerUserName;
+    ImageView course,one,two,three;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView = findViewById(R.id.nav_view);
         setSupportActionBar(toolbar);
         searchView = findViewById(R.id.activity_main_redtv);
+        course = findViewById(R.id.courseid);
+        one = findViewById(R.id.one);
+        two = findViewById(R.id.two);
+        three = findViewById(R.id.three);
+        course.setOnClickListener(this);
         searchView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -158,11 +165,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return false;
     }
 
-    public void doClickBook(View view) {
-        startActivity(new Intent(MainActivity.this,BookProfile.class));
-    }
 
-    public void onCourseClick(View view) {
-        startActivity(new Intent(this,Course.class));
+    @Override
+    public void onClick(View v) {
+        if(v.getId()==R.id.courseid){
+            Intent intent = new Intent(MainActivity.this,Course.class);
+            startActivity(intent);
+        }
+
+        if(v.getId()==R.id.one || v.getId()==R.id.two || v.getId()==R.id.three){
+            Intent intent = new Intent(MainActivity.this,BookProfile.class);
+            startActivity(intent);
+        }
     }
 }

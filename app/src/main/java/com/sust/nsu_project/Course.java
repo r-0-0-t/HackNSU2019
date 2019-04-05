@@ -14,10 +14,10 @@ public class Course extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_course);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Course");
-        setContentView(R.layout.activity_course);
         tv = findViewById(R.id.reg);
     }
 
